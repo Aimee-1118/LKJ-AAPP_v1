@@ -1,7 +1,25 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // images.remotePatterns (drive.google.com, lh3.googleusercontent.com) — Stage 9에서 적용
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "placehold.co",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "drive.google.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "lh3.googleusercontent.com",
+        pathname: "/**",
+      },
+    ],
+  },
 };
 
 export default nextConfig;

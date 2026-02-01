@@ -8,6 +8,9 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+  	fontFamily: {
+  		pretendard: ['"Pretendard Variable"', '"Pretendard"', 'sans-serif'],
+  	},
   	container: {
   		center: true,
   		padding: "1rem",
